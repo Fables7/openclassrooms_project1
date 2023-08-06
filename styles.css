@@ -42,11 +42,12 @@ body {
   display: flex;
   flex: 1;
   flex-direction: column;
+  padding: 2rem;
+  padding-top: 0;
 }
 
 header {
   padding: 2rem;
-  border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,4 +78,14 @@ header {
 
 #accomodations:target {
   color: #0065fc;
+}
+
+.text-small {
+  color: rgb(165, 165, 165);
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.text {
+  margin-bottom: 0.5rem;
 }
