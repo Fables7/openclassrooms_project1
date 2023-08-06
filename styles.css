@@ -4,14 +4,26 @@
   height: 15vh;
   background-color: #f2f2f2;
   display: flex;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .footer ul {
   list-style-type: none;
   padding: 0;
+  flex: 1;
 }
 .footer li {
   font-size: 1.2rem;
+}
+
+.footer li {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  color: rgb(165, 165, 165);
 }
 
 body {
