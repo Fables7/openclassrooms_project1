@@ -1,7 +1,7 @@
 .footer {
   width: 100%;
   margin-top: auto;
-  height: 15vh;
+  min-height: 11.5vh;
   background-color: #f2f2f2;
   display: flex;
   padding-left: 2rem;
@@ -32,12 +32,49 @@ body {
   padding: 0;
   flex-direction: column;
   min-height: 100vh;
+
   font-family: Raleway, sans-serif;
-  border: 1px solid black;
+  width: 100%;
+  overflow: auto;
 }
 
 .wrapper {
   display: flex;
   flex: 1;
   flex-direction: column;
+}
+
+header {
+  padding: 2rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 1rem;
+}
+
+.booki {
+  height: 2rem;
+}
+
+/* class nav button where when one is selected it goes blue */
+.nav-button {
+  /* border: none; */
+  color: rgb(165, 165, 165);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.75rem;
+  margin: 0.5rem 0.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+.nav-button:target {
+  color: #0065fc;
+}
+
+#accomodations:target {
+  color: #0065fc;
 }
