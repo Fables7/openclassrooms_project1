@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -19,30 +23,50 @@
     <div class="wrapper">
       <p class="text">Find a place for your dream vacation</p>
       <p class="text-small">Downtown or in nature</p>
+      <!-- Search Bar -->
       <div class="search-location">
-        <div class="icon-holder"></div>
+        <div class="icon-holder"><i class="fa fa-location-dot"></i></div>
+
         <input class="input" type="text" value="Marseille, France" />
         <button class="search-button">Search</button>
       </div>
-
+      <!-- Filters -->
       <div class="filters">
         <p class="filter-title">Filters</p>
         <div class="filter">
-          <div class="filter-logo"></div>
+          <div class="filter-logo">
+            <i class="fa fa-money-bill-wave"></i>
+          </div>
           <p>Low cost</p>
         </div>
         <div class="filter">
-          <div class="filter-logo"></div>
+          <div class="filter-logo">
+            <i class="fa fa-child-reaching"></i>
+          </div>
           <p>Family-friendly</p>
         </div>
         <div class="filter">
-          <div class="filter-logo"></div>
+          <div class="filter-logo">
+            <i class="fa fa-heart"></i>
+          </div>
           <p>Romantic</p>
         </div>
         <div class="filter">
-          <div class="filter-logo"></div>
+          <div class="filter-logo">
+            <i class="fa fa-dog"></i>
+          </div>
           <p>Pets allowed</p>
         </div>
+      </div>
+      <!-- Info -->
+      <div class="info">
+        <div class="info-icon">
+          <i class="fa fa-info"></i>
+        </div>
+        <p>
+          More than soo accommodations are availabie in this <br />
+          city
+        </p>
       </div>
       <main></main>
     </div>
