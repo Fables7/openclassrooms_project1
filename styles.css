@@ -211,11 +211,13 @@ main {
 .card-title {
   font-size: 0.7rem;
   font-weight: 500;
+  margin: 0;
 }
 
 .card-subtitle {
   font-size: 0.7rem;
   color: rgb(165, 165, 165);
+  margin: 0;
 }
 
 .card-info {
@@ -257,17 +259,10 @@ main {
   gap: 20px;
 }
 
-.column-list p {
-  margin: 0;
-}
-
 .column-list li {
-  background-color: white;
   height: 9rem;
-  border-radius: 10px;
+
   padding: 0.3rem;
-  box-sizing: border-box;
-  display: flex;
   flex-direction: column;
 }
 
@@ -279,6 +274,16 @@ main {
   border-top-right-radius: 10px;
 }
 
+.column-list li,
+.aside-list li {
+  background-color: white;
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
 /* Aside */
 aside {
   width: 32%;
@@ -286,8 +291,45 @@ aside {
 
 .aside-title {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+  /* height: 13%; */
 }
 
+.aside-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid red; */
+  height: 85%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-list li {
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  padding: 0.2rem;
+  height: 6.3rem;
+  width: 100%;
+}
+
+.aside-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.aside-list img {
+  object-fit: cover;
+  width: 35%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
 main,
 aside {
   background-color: #f2f2f2;
