@@ -8,7 +8,22 @@
   padding-right: 2rem;
   padding-top: 0.75rem;
   box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer h6 {
+  margin: 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  max-width: 720px;
+  padding-top: 1.2rem;
+  box-sizing: border-box;
 }
 
 .footer ul {
@@ -16,12 +31,9 @@
   padding: 0;
   flex: 1;
 }
-.footer li {
-  font-size: 1.2rem;
-}
 
 .footer li {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   margin-top: 0.5rem;
   color: rgb(165, 165, 165);
 }
@@ -32,6 +44,7 @@ body {
   padding: 0;
   flex-direction: column;
   min-height: 100vh;
+  align-items: center;
 
   font-family: Raleway, sans-serif;
   width: 100%;
@@ -44,14 +57,23 @@ body {
   flex-direction: column;
   padding: 2rem;
   padding-top: 0;
+  /* border: 1px red solid; */
+  width: 100%;
+  max-width: 950px;
+
+  /* max-width: 2500px; */
 }
 
 header {
   padding: 2rem;
   display: flex;
+  width: 100%;
+  max-width: 950px;
   justify-content: space-between;
   align-items: center;
-  height: 1rem;
+  height: 0.4rem;
+  /* border: red 1px solid; */
+  /* width: 100%; */
 }
 
 .booki {
@@ -62,6 +84,7 @@ header {
 .nav-button {
   /* border: none; */
   color: rgb(165, 165, 165);
+  height: 100%;
   padding: 0.5rem 1rem;
   text-align: center;
   text-decoration: none;
@@ -69,7 +92,11 @@ header {
   font-size: 0.75rem;
   margin: 0.5rem 0.5rem;
   cursor: pointer;
-  border-radius: 0.5rem;
+}
+
+.nav-button.default {
+  color: blue;
+  text-decoration: none;
 }
 
 .nav-button:target {
@@ -88,6 +115,7 @@ header {
 
 .text {
   margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 /* Search Location */
@@ -96,6 +124,7 @@ header {
   display: flex;
   margin-bottom: 1rem;
   height: 2.3rem;
+  margin-top: 0.7rem;
   border-radius: 10px;
   overflow: hidden;
   width: fit-content;
@@ -153,7 +182,7 @@ header {
 .filter p {
   margin-left: 2.7rem;
   margin-right: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .filter-logo {
@@ -173,7 +202,8 @@ header {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  /* margin-bottom: 1rem; */
+  margin-top: 1.3rem;
+  color: #b7b7b7;
 }
 
 .info p {
@@ -182,8 +212,8 @@ header {
 }
 
 .info-icon {
-  width: 1rem;
-  height: 1rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -193,19 +223,22 @@ header {
 }
 .info-icon i {
   color: #0065fc;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .main-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
   /* flex-wrap: wrap; */
 }
 
 /* Main */
 main {
   width: 65%;
+  height: 27.2rem;
 }
 
 .card-title {
@@ -252,6 +285,7 @@ main {
 
 .column-list {
   list-style: none;
+  /* border: 1px red solid; */
   margin: 0;
   padding: 0;
   display: grid;
@@ -287,6 +321,7 @@ main {
 /* Aside */
 aside {
   width: 32%;
+  height: 27.2rem;
 }
 
 .aside-title {
@@ -336,4 +371,66 @@ aside {
   box-sizing: border-box;
   padding: 1rem;
   border-radius: 10px;
+}
+
+/* Activities */
+.activities-container {
+  display: flex;
+  flex-direction: row;
+  /* margin-top: 1rem; */
+  justify-content: space-between;
+  /* height: 100px; */
+  /* border: 1px red solid; */
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  width: 13.3rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+}
+
+.activity-card-1 {
+  height: 19.4rem;
+}
+
+.activity-card-2 {
+  height: 10.4rem;
+}
+.activity-card-3 {
+  height: 7.2rem;
+}
+.activity-card-4 {
+  height: 8.5rem;
+}
+.activity-card-5 {
+  height: 9.3rem;
+}
+
+.activity-title-box {
+  background-color: white;
+  height: 2.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 0.6rem;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.activity-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity-img {
+  object-fit: cover;
+  /* flex: 1; */
+  height: 100%;
 }
