@@ -12,8 +12,19 @@
   </head>
   <body>
     <header>
-      <img src="logo/Booki.png" alt="logo" title="Booki" class="booki" />
-      <nav>
+      <img
+        src="logo/Booki.png"
+        alt="logo"
+        title="Booki"
+        class="booki booki-desktop"
+      />
+      <img
+        src="logo/Booki@3x.png"
+        alt="logo"
+        title="Booki"
+        class="booki booki-mobile"
+      />
+      <nav class="nav-container">
         <a class="nav-button default" href="#accomodations" id="accomodations"
           >Accomodations</a
         >
@@ -21,59 +32,64 @@
       </nav>
     </header>
     <div class="wrapper">
-      <p class="text">Find a place for your dream vacation</p>
-      <p class="text-small">Downtown or in nature</p>
-      <!-- Search Bar -->
-      <div class="search-location">
-        <div class="icon-holder"><i class="fa fa-location-dot"></i></div>
+      <div class="search-filters-container">
+        <p class="text">Find a place for your dream vacation</p>
+        <p class="text-small">Downtown or in nature</p>
+        <!-- Search Bar -->
+        <div class="search-location">
+          <div class="icon-holder"><i class="fa fa-location-dot"></i></div>
 
-        <input class="input" type="text" value="Marseille, France" />
-        <button class="search-button">Search</button>
-      </div>
-      <!-- Filters -->
-      <div class="filters">
-        <p class="filter-title">Filters</p>
-        <div class="filter">
-          <div class="filter-logo">
-            <i class="fa fa-money-bill-wave"></i>
+          <input class="input" type="text" value="Marseille, France" />
+          <button class="search-button">
+            <i class="fa fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <!-- Filters -->
+        <div class="filters">
+          <p class="filter-title">Filters</p>
+          <div class="filter">
+            <div class="filter-logo">
+              <i class="fa fa-money-bill-wave"></i>
+            </div>
+            <p>Low cost</p>
           </div>
-          <p>Low cost</p>
-        </div>
-        <div class="filter">
-          <div class="filter-logo">
-            <i class="fa fa-child-reaching"></i>
+          <div class="filter filter2">
+            <div class="filter-logo">
+              <i class="fa fa-heart"></i>
+            </div>
+            <p>Romantic</p>
           </div>
-          <p>Family-friendly</p>
-        </div>
-        <div class="filter">
-          <div class="filter-logo">
-            <i class="fa fa-heart"></i>
+          <div class="filter filter3">
+            <div class="filter-logo">
+              <i class="fa fa-child-reaching"></i>
+            </div>
+            <p>Family-friendly</p>
           </div>
-          <p>Romantic</p>
-        </div>
-        <div class="filter">
-          <div class="filter-logo">
-            <i class="fa fa-dog"></i>
+
+          <div class="filter filter4">
+            <div class="filter-logo">
+              <i class="fa fa-dog"></i>
+            </div>
+            <p>Pets allowed</p>
           </div>
-          <p>Pets allowed</p>
         </div>
-      </div>
-      <!-- Info -->
-      <div class="info">
-        <div class="info-icon">
-          <i class="fa fa-info"></i>
+        <!-- Info -->
+        <div class="info">
+          <div class="info-icon">
+            <i class="fa fa-info"></i>
+          </div>
+          <p>
+            More than soo accommodations are availabie in this <br />
+            city
+          </p>
         </div>
-        <p>
-          More than soo accommodations are availabie in this <br />
-          city
-        </p>
       </div>
       <!-- Main container -->
       <div class="main-container">
         <main>
           <p>Accomodations in Marseille</p>
-          <ul class="column-list">
-            <li>
+          <div class="grid-container">
+            <div class="grid-item">
               <img
                 src="/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                 alt="Auberge la Cannebière accomodation"
@@ -92,9 +108,9 @@
                   <i class="fa fa-star star unrated-star"></i>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li>
+            <div class="grid-item">
               <img
                 src="/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                 alt="Hôtel du port accomodation"
@@ -113,9 +129,9 @@
                   <i class="fa fa-star star"></i>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li>
+            <div class="grid-item">
               <img
                 src="/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                 alt="Les mouettes Hotel accomodation"
@@ -134,9 +150,9 @@
                   <i class="fa fa-star star unrated-star"></i>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li>
+            <div class="grid-item">
               <img
                 src="/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                 alt="Hôtel de la mer accomodation"
@@ -155,9 +171,9 @@
                   <i class="fa fa-star star unrated-star"></i>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li>
+            <div class="grid-item">
               <img
                 src="/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                 alt="Auberge Le Panier accomodation"
@@ -176,9 +192,9 @@
                   <i class="fa fa-star star unrated-star"></i>
                 </div>
               </div>
-            </li>
+            </div>
 
-            <li>
+            <div class="grid-item">
               <img
                 src="/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                 alt="Hôtel chez Amina accomodation"
@@ -197,8 +213,8 @@
                   <i class="fa fa-star star"></i>
                 </div>
               </div>
-            </li>
-          </ul>
+            </div>
+          </div>
           <p>Show more</p>
         </main>
         <aside>
@@ -334,27 +350,29 @@
     </div>
     <footer class="footer">
       <div class="footer-wrapper">
-        <div>
-          <h6>About</h6>
-          <ul>
-            <li>Site Map</li>
-            <li>General Terms and Conditions</li>
-            <li>Data and Privacy</li>
-          </ul>
-        </div>
-        <div>
-          <h6>Our Accomodations</h6>
-          <ul>
-            <li>Quality Assessment</li>
-            <li>You have a hotel?</li>
-          </ul>
-        </div>
-        <div>
-          <h6>Assistance</h6>
-          <ul>
-            <li>Hel Desk</li>
-            <li>Contact Us</li>
-          </ul>
+        <div class="footer-inner-wrapper">
+          <div>
+            <h6>About</h6>
+            <ul>
+              <li>Site Map</li>
+              <li>General Terms and Conditions</li>
+              <li>Data and Privacy</li>
+            </ul>
+          </div>
+          <div>
+            <h6>Our Accomodations</h6>
+            <ul>
+              <li>Quality Assessment</li>
+              <li>You have a hotel?</li>
+            </ul>
+          </div>
+          <div>
+            <h6>Assistance</h6>
+            <ul>
+              <li>Hel Desk</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
