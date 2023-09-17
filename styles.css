@@ -66,8 +66,6 @@ body {
   /* border: 1px red solid; */
   width: 100%;
   max-width: 950px;
-
-  /* max-width: 2500px; */
 }
 
 header {
@@ -292,6 +290,7 @@ header {
 /* Main */
 main {
   width: 100%;
+  /* border: 1px red solid; */
 }
 
 .show-more {
@@ -487,12 +486,68 @@ aside {
 
 /* Media Queries */
 
-/* DESKTOP ///////////////////////////////////////////////////////////////////////////////// */
+/* TABLET ///////////////////////////////////////////////////////////////////////////////// */
 
 @media (min-width: 768px) {
+  /* MAX-WIDTH */
+  .wrapper,
+  .footer-wrapper,
+  header {
+    max-width: none;
+  }
+
+  /* FILTERS */
+  .filters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .filter {
+    margin-right: 0.3rem;
+  }
+
+  .footer-inner-wrapper {
+    flex-direction: row;
+  }
+
+  /* MAIN */
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* ASIDE */
+
+  .aside-list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  /* ACTIVITIES */
+
+  .activities-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .activity-vertical {
+    order: 1;
+  }
+}
+
+/* DESKTOP ///////////////////////////////////////////////////////////////////////////////// */
+
+@media (min-width: 992px) {
+  .wrapper,
+  .footer-wrapper,
+  header {
+    max-width: 950px;
+  }
   .text {
     font-size: 0.9rem;
-    font-weight: normal;
   }
   /* Booki */
   .booki-mobile {
@@ -548,11 +603,6 @@ aside {
     /* border: 1px solid green; */
   }
   /* FILTERS */
-  .filters {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
 
   .filter {
     height: 2rem;
@@ -612,7 +662,7 @@ aside {
   main {
     background-color: #f2f2f2;
     width: 65%;
-    height: 27.2rem;
+    height: 26rem;
   }
   aside {
     width: 32%;
@@ -626,6 +676,7 @@ aside {
   .grid-container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    margin-top: 1rem;
   }
 
   .grid-item {
@@ -633,9 +684,19 @@ aside {
   }
 
   .show-more {
-    font-weight: normal;
+    /* font-weight: normal; */
+    font-size: 0.7rem;
+    margin-top: 1.4rem;
   }
   /* POPULAR ITEMS */
+
+  .aside-list {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    margin-top: 1rem;
+  }
 
   .popular-item {
     height: 6.3rem;
@@ -649,6 +710,7 @@ aside {
     margin-left: 0;
   }
   .activities-container {
+    display: flex;
     flex-direction: row;
     padding: 0;
   }
@@ -679,22 +741,12 @@ aside {
     font-weight: normal;
   }
 
+  .activity-vertical {
+    order: 0;
+  }
+
   /* FOOTER */
   .footer-wrapper {
     padding-left: 0;
-  }
-
-  .footer-inner-wrapper {
-    flex-direction: row;
-  }
-}
-
-/* TABLET ///////////////////////////////////////////////////////////////////////////////// */
-
-@media (min-width: 768px) {
-  /* HEADER */
-
-  header {
-    border: 1px red solid;
   }
 }
