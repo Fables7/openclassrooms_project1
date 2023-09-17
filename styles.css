@@ -9,7 +9,6 @@
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
-  /* border: red solid 1px; */
 }
 
 .footer h6 {
@@ -22,7 +21,6 @@
   max-width: 950px;
   width: 100%;
   padding-top: 1.2rem;
-  /* border: red solid 1px; */
   padding-left: 1rem;
 }
 
@@ -79,6 +77,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 7rem;
+  margin-bottom: 1rem;
   /* border: red 1px solid; */
   box-sizing: border-box;
   /* width: 100%; */
@@ -97,7 +96,6 @@ header {
   display: none;
 }
 
-/* class nav button where when one is selected it goes blue */
 .nav-container {
   display: flex;
   align-items: center;
@@ -114,7 +112,7 @@ header {
   justify-content: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   cursor: pointer;
   border-bottom: 0.2rem solid #f2f2f2;
   width: 100%;
@@ -189,6 +187,7 @@ header {
   padding: 0.7rem;
   box-sizing: border-box;
   flex: 1;
+  outline: none;
 }
 
 .search-button {
@@ -301,14 +300,14 @@ main {
 }
 
 .card-title {
-  font-size: 0.7rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: bold;
   margin: 0;
 }
 
 .card-subtitle {
-  font-size: 0.6rem;
-  color: rgb(165, 165, 165);
+  font-size: 0.9rem;
+  /* color: rgb(165, 165, 165); */
   margin: 0;
 }
 
@@ -325,11 +324,10 @@ main {
 .stars-container {
   display: flex;
   flex-direction: row;
-  /* border: 1px red solid; */
 }
 
 .star {
-  font-size: 0.52rem;
+  font-size: 0.7rem;
   color: #0065fc;
   /* margin: 0; */
 }
@@ -339,14 +337,13 @@ main {
 }
 
 .price {
-  font-size: 0.6rem;
-  /* font-weight: bold; */
+  font-size: 0.9rem;
+  font-weight: 500;
   color: black;
 }
 
 .grid-container {
   list-style: none;
-  /* border: 1px red solid; */
   margin: 0;
   padding: 0;
   display: grid;
@@ -407,6 +404,12 @@ aside {
   grid-template-columns: 1fr;
   gap: 1rem;
   /* border: 1px red solid; */
+}
+
+.aside-list .card-title {
+  /* border: 1px red solid; */
+  height: 1rem;
+  margin-bottom: -0.5rem;
 }
 
 .popular-item {
@@ -497,11 +500,6 @@ aside {
   .footer-wrapper,
   header {
     max-width: none;
-  }
-
-  header {
-    /* border: 1px red solid; */
-    margin-bottom: 1rem;
   }
 
   /* FILTERS */
@@ -615,6 +613,7 @@ aside {
     border-top: 0.1rem solid #f2f2f2;
     width: 8rem;
     border-bottom: none;
+    font-size: 0.75rem;
 
     /* border: 1px solid green; */
   }
@@ -672,6 +671,25 @@ aside {
     padding-top: 0;
   }
   /* MAIN */
+  .card-title {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+
+  .card-subtitle {
+    font-size: 0.6rem;
+    color: rgb(165, 165, 165);
+    margin: 0;
+  }
+
+  .price {
+    font-size: 0.6rem;
+    /* font-weight: bold; */
+  }
+
+  .star {
+    font-size: 0.52rem;
+  }
   .main-container {
     flex-direction: row;
     margin-bottom: 2.7rem;
