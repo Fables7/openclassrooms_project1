@@ -5,9 +5,11 @@
   background-color: #f2f2f2;
   display: flex;
   padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   box-sizing: border-box;
   justify-content: center;
   align-items: center;
+  /* border: red solid 1px; */
 }
 
 .footer h6 {
@@ -50,6 +52,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
+  border: red solid 1px;
 
   font-family: Raleway, sans-serif;
   width: 100%;
@@ -142,14 +145,17 @@ header {
 }
 
 .text {
+  margin: 0;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
 
 /* Search and filters container */
 
 .search-filters-container {
-  padding: 1rem;
+  padding: 0rem 1rem;
+  /* border: 1px red solid; */
 }
 
 /* Search Location */
@@ -158,8 +164,8 @@ header {
   display: flex;
 
   margin-bottom: 1rem;
-  height: 2.3rem;
-  margin-top: 0.7rem;
+  height: 2.5rem;
+  margin-top: 2rem;
   border-radius: 10px;
   overflow: hidden;
   /* border: 1px red solid; */
@@ -189,17 +195,19 @@ header {
   background-color: #0065fc;
   color: white;
   border: none;
-  width: 2.3rem;
+  width: 2.5rem;
   border-radius: 10px;
 }
 
 /* Filters section */
 
 .filters {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  width: 80%;
   /* align-items: center; */
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .filter-title {
@@ -208,26 +216,31 @@ header {
 }
 
 .filter {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   border: 1px solid #e4e4e4;
   width: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 2rem;
+  height: 2.5rem;
   position: relative;
-  margin-right: 1rem;
+  margin-right: -1rem;
+}
+
+.row2 {
+  grid-column: span 2;
 }
 
 .filter p {
-  margin-left: 2.7rem;
-  margin-right: 1rem;
-  font-size: 0.8rem;
+  margin-left: 3rem;
+  margin-right: 1.5rem;
+  font-size: 1rem;
+  white-space: nowrap;
 }
 
 .filter-logo {
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
   background-color: #deebff;
   position: absolute;
@@ -243,17 +256,17 @@ header {
   flex-direction: row;
   align-items: flex-start;
   margin-top: 1.3rem;
-  color: #b7b7b7;
+  margin-bottom: 1.3rem;
 }
 
 .info p {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   margin: 0;
 }
 
 .info-icon {
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -263,7 +276,7 @@ header {
 }
 .info-icon i {
   color: #0065fc;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
 }
 
 .main-container {
@@ -352,7 +365,7 @@ main {
 }
 
 .grid-item,
-.aside-list li {
+.aside-list .popular-item {
   background-color: white;
   /* border: 1px red solid; */
 
@@ -366,7 +379,6 @@ main {
 /* Aside */
 aside {
   width: 100%;
-  height: 27.2rem;
   background-color: #f2f2f2;
 }
 
@@ -379,22 +391,19 @@ aside {
 }
 
 .aside-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  /* border: 1px solid red; */
-  height: 85%;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  /* border: 1px red solid; */
 }
 
-.aside-list li {
+.popular-item {
   background-color: white;
   display: flex;
   overflow: hidden;
   padding: 0.2rem;
-  height: 6.3rem;
+  height: 8rem;
   width: 100%;
 }
 
@@ -470,6 +479,10 @@ aside {
 /* Media Queries */
 
 @media (min-width: 768px) {
+  .text {
+    font-size: 0.9rem;
+    font-weight: normal;
+  }
   /* Booki */
   .booki-mobile {
     display: none;
@@ -493,6 +506,8 @@ aside {
   /* SEARCH */
   .search-location {
     width: fit-content;
+    margin-top: 0.7rem;
+    height: 2.3rem;
   }
 
   .search-button {
@@ -523,8 +538,26 @@ aside {
   }
   /* FILTERS */
   .filters {
+    display: flex;
     flex-direction: row;
     align-items: center;
+  }
+
+  .filter {
+    height: 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+  }
+
+  .filter-logo {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+
+  .filter p {
+    font-size: 0.8rem;
+    margin-left: 2.7rem;
+    margin-right: 1rem;
   }
 
   .filter2 {
@@ -537,6 +570,24 @@ aside {
 
   .filter4 {
     order: 1;
+  }
+
+  .info {
+    margin-bottom: 0;
+  }
+
+  .info p {
+    font-size: 0.7rem;
+    color: #b7b7b7;
+  }
+
+  .info-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .info-icon i {
+    font-size: 0.6rem;
   }
   /* Wrapper */
 
@@ -567,6 +618,11 @@ aside {
 
   .grid-item {
     height: 9rem;
+  }
+  /* POPULAR ITEMS */
+
+  .popular-item {
+    height: 6.3rem;
   }
   /* ACTIVITIES */
   .activities-container {
