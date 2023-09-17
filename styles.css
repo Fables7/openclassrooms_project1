@@ -14,6 +14,8 @@
 
 .footer h6 {
   margin: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
 .footer-wrapper {
@@ -40,9 +42,9 @@
 }
 
 .footer li {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-top: 0.5rem;
-  color: rgb(165, 165, 165);
+  /* color: rgb(165, 165, 165); */
 }
 
 body {
@@ -97,18 +99,14 @@ header {
 
 /* class nav button where when one is selected it goes blue */
 .nav-container {
-  /* border: red 1px solid; */
   display: flex;
   align-items: center;
   height: 100%;
   width: 100%;
   flex-direction: row;
-  /* margin: 0.5rem 0.5rem; */
 }
 .nav-button {
-  /* border: none; */
   color: rgb(165, 165, 165);
-  /* height: 100%; */
   padding: 0.5rem 1rem;
   text-align: center;
   box-sizing: border-box;
@@ -120,6 +118,11 @@ header {
   cursor: pointer;
   border-bottom: 0.2rem solid #f2f2f2;
   width: 100%;
+  text-decoration: none;
+}
+
+.nav-disabled {
+  pointer-events: none;
 }
 
 .nav-button.default {
@@ -166,7 +169,8 @@ header {
   margin-top: 2rem;
   border-radius: 10px;
   overflow: hidden;
-  /* border: 1px red solid; */
+  border-top: 0.5px #f2f2f2 solid;
+  border-bottom: 0.5px #f2f2f2 solid;
 }
 
 .icon-holder {
@@ -175,7 +179,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: rem;
+  font-size: 1rem;
 }
 
 .input {
@@ -185,7 +189,6 @@ header {
   padding: 0.7rem;
   box-sizing: border-box;
   flex: 1;
-  /* font-weight: bold; */
 }
 
 .search-button {
@@ -304,7 +307,7 @@ main {
 }
 
 .card-subtitle {
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: rgb(165, 165, 165);
   margin: 0;
 }
@@ -496,6 +499,11 @@ aside {
     max-width: none;
   }
 
+  header {
+    /* border: 1px red solid; */
+    margin-bottom: 1rem;
+  }
+
   /* FILTERS */
   .filters {
     display: flex;
@@ -536,6 +544,11 @@ aside {
   .activity-vertical {
     order: 1;
   }
+  /* FOOTER */
+
+  .footer h6 {
+    margin-top: 0;
+  }
 }
 
 /* DESKTOP ///////////////////////////////////////////////////////////////////////////////// */
@@ -559,7 +572,10 @@ aside {
   /* HEADER */
   header {
     flex-direction: row;
-    height: 4rem;
+    height: 5.5rem;
+    margin-bottom: 0;
+
+    /* border: 1px red solid; */
   }
 
   .booki {
@@ -658,11 +674,12 @@ aside {
   /* MAIN */
   .main-container {
     flex-direction: row;
+    margin-bottom: 2.7rem;
   }
   main {
     background-color: #f2f2f2;
     width: 65%;
-    height: 26rem;
+    height: 27.5rem;
   }
   aside {
     width: 32%;
@@ -670,7 +687,7 @@ aside {
   main,
   aside {
     border-radius: 10px;
-    padding: 1rem;
+    padding: 1.7rem 1.5rem;
   }
 
   .grid-container {
@@ -686,7 +703,7 @@ aside {
   .show-more {
     /* font-weight: normal; */
     font-size: 0.7rem;
-    margin-top: 1.4rem;
+    margin-top: 1.5rem;
   }
   /* POPULAR ITEMS */
 
@@ -713,6 +730,7 @@ aside {
     display: flex;
     flex-direction: row;
     padding: 0;
+    margin-top: 0.5rem;
   }
   .card {
     width: 13.3rem;
@@ -738,7 +756,6 @@ aside {
   .activity-title-box {
     height: 2.5rem;
     font-size: 0.7rem;
-    font-weight: normal;
   }
 
   .activity-vertical {
@@ -748,5 +765,15 @@ aside {
   /* FOOTER */
   .footer-wrapper {
     padding-left: 0;
+  }
+
+  .footer li {
+    font-size: 0.7rem;
+    color: rgb(127, 127, 127);
+  }
+
+  .footer h6 {
+    font-size: 0.8rem;
+    margin-top: 0;
   }
 }
