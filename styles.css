@@ -179,6 +179,9 @@ header {
   box-sizing: border-box;
   flex: 1;
   outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Raleway, sans-serif;
 }
 
 .search-button {
@@ -202,6 +205,8 @@ header {
 .filter-title {
   font-size: 0.9rem;
   margin-right: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 .filter {
@@ -214,6 +219,7 @@ header {
   height: 2.5rem;
   position: relative;
   margin-right: -1rem;
+  font-weight: 600;
 }
 
 .row2 {
@@ -283,6 +289,7 @@ main {
 
 .show-more {
   font-weight: bold;
+  margin-top: 2rem;
 }
 
 .card-title {
@@ -485,6 +492,11 @@ aside {
     align-items: center;
   }
 
+  .filter-title {
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+
   .filter {
     margin-right: 0.3rem;
   }
@@ -578,6 +590,11 @@ aside {
 
   .nav-container {
     width: auto;
+  }
+
+  .input {
+    font-size: 0.8rem;
+    font-weight: 600;
   }
 
   .nav-button {
