@@ -473,6 +473,14 @@ aside {
   height: 100%;
 }
 
+.grid-item:hover,
+.popular-item:hover,
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 12px 4px -1px;
+  cursor: pointer;
+}
+
 /* Media Queries */
 
 /* TABLET ///////////////////////////////////////////////////////////////////////////////// */
