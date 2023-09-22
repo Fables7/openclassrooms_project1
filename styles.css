@@ -191,6 +191,7 @@ header {
   border: none;
   width: 2.5rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 /* Filters section */
