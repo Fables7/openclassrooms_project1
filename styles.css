@@ -287,6 +287,10 @@ main {
   width: 100%;
 }
 
+main p {
+  color: black;
+}
+
 .show-more {
   font-weight: bold;
   margin-top: 2rem;
